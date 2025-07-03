@@ -1,0 +1,33 @@
+.aboutUsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.videoPlayer {
+  width: 90%;
+  padding: 50px 24px 0 24px;
+}
+.aboutUsVideo {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+
+  border: none;
+}
+
+.styledVideo:hover {
+  transform: scale(1.01);
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  .aboutUsVideo {
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aboutUsVideo {
+    height: auto;
+  }
+}

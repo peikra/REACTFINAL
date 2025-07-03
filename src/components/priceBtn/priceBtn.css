@@ -1,0 +1,61 @@
+.priceBtn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.basketCartBtn {
+  display: flex;
+}
+
+.basketCartBtn input {
+  display: flex;
+  text-align: center;
+  border: none;
+  width: 60px;
+  outline: none;
+  max-width: 70px;
+  font-family: "FiraGO-500";
+  font-size: 16px;
+}
+.basketCartBtn button {
+  background: rgba(11, 89, 47, 0.05);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.binIcon button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media only screen and (min-width: 678px) {
+  .priceBtn {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  .priceBtn {
+    gap: 10px;
+  }
+  .basketCartBtn input {
+    width: 40px;
+  }
+}
+@media only screen and (max-width: 378px) {
+  .priceBtn {
+    gap: 0;
+  }
+}

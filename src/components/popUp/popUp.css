@@ -1,0 +1,85 @@
+.ingredientsContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  width: 100%;
+  gap: 30px;
+  display: flex;
+  background: white;
+  padding: 20px 10px;
+  border-radius: 8px;
+  text-align: start;
+  position: relative;
+  width: auto;
+  max-width: 640px;
+  max-height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.popUpImage {
+  display: flex;
+
+  justify-content: center;
+}
+
+.popUpHead {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: start;
+  gap: 10px;
+}
+.popUpHead h6 {
+  color: rgba(51, 51, 51, 1);
+  font-size: 16px;
+  font-family: "FiraGO-500";
+}
+
+.popUpImage img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.closePopUp button,
+.closePopUpResponsive button {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 13px;
+  cursor: pointer;
+}
+.closeHeader {
+  color: rgba(51, 51, 51, 0.8);
+}
+ol li {
+  color: rgba(51, 51, 51, 0.8);
+  font-size: 16px;
+  font-family: "FiraGO-400";
+}
+
+@media only screen and (max-width: 768px) {
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .closePopUp {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .closePopUpResponsive {
+    display: none;
+  }
+}

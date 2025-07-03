@@ -1,0 +1,32 @@
+.messageContainer {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.messageContainer h4 {
+  font-family: "FiraGO-400";
+  font: 18px;
+  color: #0b592f;
+}
+.LinkTo {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  color: #0b592f;
+  font-family: "FiraGO-500";
+
+  background-color: #f0f0f0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.LinkTo:active {
+  background-color: #0b592f;
+  color: #f0f0f0;
+}

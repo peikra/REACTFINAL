@@ -1,0 +1,37 @@
+.privacyContainer {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.privacyContent {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.privacy {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.privacy h1 {
+  font-size: 18px;
+  font-family: "FiraGO-600";
+  color: rgba(140, 167, 10, 1);
+}
+
+.privacy p {
+  font-size: 16px;
+  line-height: 22px;
+  color: grey;
+}
+
+@media only screen and (max-width: 968px) {
+  .privacy {
+    width: 100%;
+  }
+}

@@ -1,0 +1,125 @@
+.orderMainContainer {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  gap: 20px;
+}
+
+.orderDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  border-radius: 16px;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.05);
+}
+.orderDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+}
+
+.orderInfo,
+.orderInfoPrice {
+  display: flex;
+  justify-content: space-between;
+}
+.orderDetailsHead {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 10px;
+}
+
+.orderDetailsHead span {
+  color: rgba(140, 167, 10, 1);
+  font-family: "FiraGO-500";
+  font-size: 16px;
+  /* padding: 10px; */
+}
+.paySystem {
+  display: flex;
+  gap: 10px;
+}
+.paySystem img {
+  width: 40px;
+  height: 25px;
+}
+.orderInfo {
+  color: rgba(51, 51, 51, 1);
+  font-size: 15px;
+  font-family: "FiraGO-400";
+}
+.orderInfoPrice {
+  color: rgba(51, 51, 51, 1);
+  font-size: 18px;
+  font-family: "FiraGO-600";
+}
+.orderButton {
+  display: flex;
+  width: 100%;
+}
+.orderButton button {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: rgba(11, 89, 47, 1);
+  color: white;
+
+  font-size: 16px;
+  font-family: "FiraGO-500";
+}
+.orderButton button:active {
+  color: rgba(11, 89, 47, 1);
+  background: white;
+}
+.orderButton button:disabled {
+  background-color: #0b592f0d;
+  color: #33333366;
+}
+
+.deliverContainer {
+  width: 100%;
+
+  background-color: #0b592f33;
+  border-radius: 16px;
+}
+.deliverContent {
+  display: flex;
+  gap: 10px;
+
+  align-items: center;
+  padding: 10px 24px;
+}
+
+.deliverImage img {
+  width: 55px;
+  height: 55px;
+}
+.deliverTxt {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+.deliverTxt p {
+  font-size: 14px;
+  font-family: "FiraGO-500";
+  color: #333333;
+}
+.deliverTxt span {
+  font-size: 13px;
+  line-height: 20px;
+  font-family: "FiraGO-400";
+  color: #333333;
+}
+
+@media only screen and (min-width: 768px) {
+  .deliverContent {
+    justify-content: center;
+  }
+}

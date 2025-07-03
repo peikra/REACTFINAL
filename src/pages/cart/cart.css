@@ -1,0 +1,64 @@
+.cartContainedBox {
+  display: flex;
+  padding: 0 24px;
+  gap: 16px;
+}
+
+.cartIsEmpty {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  flex-direction: column;
+  gap: 10px;
+}
+.cartIsEmpty p {
+  color: #0b592f;
+  font-size: 18px;
+
+  font-family: "FiraGO-500";
+}
+.goForProduct {
+  background-color: #f0f0f0;
+  font-size: 18px;
+
+  font-family: "FiraGO-500";
+  color: #0b592f;
+  padding: 10px 20px;
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+.goForProduct:active {
+  background-color: #0b592f;
+  color: #f0f0f0;
+}
+.importedProductAndContact {
+  width: 70%;
+}
+.importedOrderList {
+  width: 30%;
+  padding-top: 80px;
+}
+@media only screen and (max-width: 768px) {
+  .contactContainerForMob {
+    display: none;
+  }
+  .cartContainedddr {
+    padding: 0 10px;
+  }
+  .cartContainedBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .importedProductAndContact {
+    width: 100%;
+  }
+  .importedOrderList {
+    width: 100%;
+    padding-top: 10px;
+  }
+}

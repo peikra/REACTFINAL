@@ -1,0 +1,130 @@
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 150px;
+  gap: 20px;
+}
+
+.footerHead {
+  display: flex;
+  width: 100%;
+}
+
+.footerHeadComponents {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 40px 60px;
+}
+.component1 {
+  gap: 16px;
+}
+.component,
+.component1 {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+.component1 img {
+  width: 120px;
+  height: 45px;
+}
+.component1 p {
+  color: rgba(51, 51, 51, 0.6);
+  font-size: 14px;
+  font-family: "FiraGo-400";
+  font-weight: 400;
+}
+.page {
+  background: transparent;
+  text-decoration: none;
+  color: rgba(140, 167, 10, 1);
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "FiraGO-400";
+  cursor: pointer;
+  line-height: 45px;
+}
+.component span {
+  background: transparent;
+  color: rgba(140, 167, 10, 1);
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "FiraGO-400";
+  cursor: pointer;
+  line-height: 45px;
+}
+.footerBottom {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: rgba(11, 89, 47, 1);
+}
+.footerBottomComponents {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 60px;
+  align-items: center;
+}
+
+.bottomComp span {
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-family: "FiraGo-400";
+}
+
+.phoneIcon {
+  color: rgba(140, 167, 10, 1);
+  padding-right: 10px;
+}
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+.socialMedia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.bottomComp {
+  display: flex;
+  gap: 10px;
+}
+.socialMedia img {
+  width: 20px;
+  height: 20px;
+}
+.component4 {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+@media only screen and (max-width: 768px) {
+  .footerHeadComponents {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .footerBottomComponents,
+  .footerHeadComponents {
+    padding: 10px 24px;
+  }
+  .component,
+  .component1 {
+    align-items: start;
+    width: 100%;
+  }
+  .component4 {
+    width: 100%;
+  }
+}

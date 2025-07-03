@@ -1,0 +1,214 @@
+.basketContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 110px;
+
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  z-index: 1000;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.basketContent {
+  width: 350px;
+  max-width: 400px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  height: auto;
+  z-index: 1000;
+  border-radius: 8px;
+  padding: 20px;
+
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+  max-height: 400px;
+}
+
+.basketShow {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.basketShow .basketContent {
+  transform: translateX(0);
+}
+.productList {
+  overflow: hidden;
+  overflow-y: auto;
+}
+.basketItems {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.basketItems button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgba(51, 51, 51, 1);
+  border: 1.5px;
+}
+.basketItems h3 {
+  color: rgba(51, 51, 51, 1);
+  font-size: 20px;
+  font-family: "FiraGO-500";
+  font-weight: 500;
+}
+.mapedContainer {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  padding-top: 25px;
+}
+.basketMenuImg img {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+.basketMenuName {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.basketMenuPrice {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.basketMemuBtn {
+  display: flex;
+}
+.basketMenuName button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.basketMemuBtn input {
+  display: flex;
+  text-align: center;
+  border: none;
+  width: 60px;
+  outline: none;
+  max-width: 70px;
+  font-family: "FiraGO-500";
+  font-size: 16px;
+}
+.recycleBin {
+  width: 15px;
+  height: 15px;
+}
+
+.basketMemuBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.basketMemuBtn button {
+  background-color: rgba(11, 89, 47, 0.05);
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 8px;
+  padding: 10px;
+
+  cursor: pointer;
+}
+.basketMemuBtn span,
+.basketMenuName span {
+  color: rgba(51, 51, 51, 1);
+  font-size: 16px;
+  font-family: "FiraGO-400";
+  font-weight: 400;
+}
+.basketMenuPrice span {
+  color: rgba(51, 51, 51, 1);
+  font-size: 16px;
+  font-family: "FiraGO-500";
+  font-weight: 500;
+}
+
+.lastPriceAndOrder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.lastPriceAndOrder button {
+  background-color: rgba(11, 89, 47, 1);
+  padding: 10px 16px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  color: rgba(255, 255, 255, 1);
+  font-family: "FiraGO-500";
+  font-weight: 500;
+  font-size: 16px;
+}
+.lastPriceAndOrder span {
+  color: rgba(51, 51, 51, 1);
+  font-family: "FiraGO-600";
+  font-weight: 600;
+  font-size: 18px;
+}
+.emptyBasket {
+  font-family: "FiraGo-400";
+  color: rgba(51, 51, 51, 1);
+  font-size: 18px;
+}
+
+.productList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.productList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.productList::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.productList::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 1);
+  cursor: pointer;
+}
+.lastPriceAndOrder button:active {
+  background: white;
+  color: rgba(51, 51, 51, 1);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
